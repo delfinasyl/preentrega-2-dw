@@ -187,7 +187,7 @@ header{
     font-weight:600;
     color: #353535;
     text-align: left;
-    margin-left: 200px;
+    margin-left: 200px; 
 }
 
 .consultasFrecuentes div ul{
@@ -257,23 +257,7 @@ padding: 0.4rem;
     font-weight: 300;
     font-size: 10px;
     font-family: "Inter", sans-serif;
-
-    }
-
-/**.temasAyuda.div article {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(4, 12.5rem) ;
-    grid-template-rows: repeat(2, 12.5rem); 
-    grid-area:
-    "seccion1 seccion2 seccion3 seccion4"
-    "seccion5 seccion6 seccion7 seccion8"; 
-}**/
-
-
+}
 /**fin html AYUDA*/
 
 
@@ -337,3 +321,228 @@ footer{
     display: none;
 }
 /**fin de footer*/
+
+/**INICIO - MEDIA QUERIES 1024px **/
+
+@media (max-width:1024px){
+    .navBar li a{
+        font-size: 22px;
+    }
+
+    /**main ARTICULOS inicio*/
+    .seccionArticulos{
+        grid-template-columns: repeat(3, 255px);
+        grid-template-rows: repeat(3, 255px);
+    }
+    .descripcionArt h2{
+        font-size: 19px;
+    }
+    .descripcionArt h3{
+        font-size: 19px;
+    }
+    /**main ARTICULOS fin*/
+
+    /**main AYUDA inicio*/
+    .consultasFrecuentes h2{
+        margin-left: 120px; 
+    }
+    .consultasFrecuentes div ul a{
+        font-size: 14px;
+        padding: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin: 0.7rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .temasAyuda div h2{
+        margin-left: 120px; 
+    }
+    .seccionAyuda{
+        grid-template-columns: repeat(4, 11.5rem) ;
+        grid-template-rows: repeat(2, 8rem) ;
+        gap: 2.5rem;
+        column-gap: 0.9rem;
+        }
+}
+/**FIN - MEDIA QUERIES 1024px **/
+/**INICIO - MEDIA QUERIES 768px **/
+@media (max-width:768px){
+    .navBar li a{
+        font-size: 22px;
+    }
+
+    /**main ARTICULOS inicio*/
+    .seccionArticulos{
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas: 
+    }
+    .descripcionArt h2{
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .descripcionArt h3{
+        font-weight: 300;
+        font-size: 15px;
+    }
+    /**main ARTICULOS fin*/
+
+    /**main AYUDA inicio*/
+    .consultasFrecuentes h2{
+        margin: 1rem;
+        margin-left: 75px; 
+    }
+    .consultasFrecuentes div ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 75px; 
+        margin-right: 75px; 
+    }
+    .consultasFrecuentes div ul a{
+        margin: 0.2rem;
+        text-align: center;
+    }
+    .temasAyuda div h2{
+        margin: 1rem; 
+        margin-left: 75px;
+
+    }
+    .seccionAyuda{
+        grid-template-columns: repeat(3, 11.5rem) ;
+        grid-template-rows: repeat(3, 8rem) ;
+        gap: 2.5rem;
+        column-gap: 1.7rem;
+        }
+    /**main AYUDA fin*/
+    .navFooter li a{
+        font-size: 0.8rem;
+        padding-left: 2.5rem;
+    }
+    .navFollow a img{
+        width: 1.2rem;
+        height: 1.2rem; 
+    }
+}
+/**FIN - MEDIA QUERIES 768px **/
+/**INICIO - MEDIA QUERIES 320px **/
+
+
+@media (max-width:320px) {
+
+    .bodyIndice{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../assets/base-fondo-indice.jpg") ;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    body{
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)), url(../assets/base-fondo-indice.jpg);
+        background-repeat: repeat;
+        background-size:  cover;
+        }
+    header{
+        height: 20rem;
+    }
+    .navBar{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navBar li {
+        margin: 0.5rem;
+    }
+    .navBar li a{
+        font-size: 18px;
+    }
+
+/***/
+
+    /**main ARTICULOS inicio*/
+    .seccionArticulos{
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: repeat(4, 122px);
+        grid-template-areas: 
+        "articulo1 articulo4"
+        "articulo2 articulo2"
+        "articulo3 articulo3"
+        "articulo5 articulo5"
+        ;
+    }
+    .descripcionArt h2{
+        font-size: 15px;
+    }
+    .descripcionArt h3{
+        font-size: 15px;
+    }
+    /**main ARTICULOS fin*/
+
+    /**main AYUDA inicio*/
+    .botonbusqueda{
+        padding: 1rem;
+    }
+    
+    .botonbusqueda input{
+        width: 196px;
+
+    }
+    .botonbusqueda button{
+        height: 25px;
+        width: 55px;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .consultasFrecuentes h2{
+        text-align: center;
+        font-size: 16px;
+        margin: 1rem;
+    }
+    .consultasFrecuentes div ul{
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+    }
+    .consultasFrecuentes div ul a{
+        margin: 0.2rem;
+        text-align: center;
+    }
+    .temasAyuda div h2{
+        text-align: center;
+        font-size: 16px;
+        margin: 1rem; 
+
+    }
+    .seccionAyuda{
+        grid-template-columns: repeat(1, 16rem) ;
+        gap: 0.5rem;
+        }
+    /**main AYUDA fin*/
+
+    .navFooter{
+        gap: 0rem;
+    }
+    .navFooter li a{
+        font-size: 0.8rem;
+        padding-left: 2.3rem;
+    }
+    .navFollow a img{
+        width: 1.2rem;
+        height: 1.2rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**FIN - MEDIA QUERIES 320px **/
